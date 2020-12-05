@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel='icon' href='resources/icons/favicon.ico' />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>Leitura dos sensores</title>
+	<link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<h1 class="title">Informações dos sensores</h1>
+
+    <div class="container">
+    	<div class="gauge-section item">
+            <h2 class="gauge-title">Temperatura</h2>
+            <div id="temp" class="gauge"></div>
+        </div>
+        <div class="gauge-section item">
+            <h2 class="gauge-title">Umidade</h2>
+            <div id="hum" class="gauge"></div>
+        </div>
+        <div class="item" style="text-align:center;">
+        	<h2 class="gauge-title">Distância</h2>
+        	<div class="gauge" style="height: 100%; display: inline-flex;">
+        		<span id="dist" class="dist-gauge">0cm</span>
+        	</div>
+        </div>
+    </div>
+
+    <footer>
+    	<h3 class="title-footer">EQUIPE</h3>
+    	<p style="margin-top: 15px; font-size: 18px; padding: 5px 0px;">Henrique Piati</p>
+    	<p style="font-size: 18px;">Guilherme Loli</p>
+    </footer>
+
+	<script type="text/javascript" src="scripts/gauges.js"></script>
+	<script type="text/javascript" src="scripts/app.js"></script>
+</body>
+</html>

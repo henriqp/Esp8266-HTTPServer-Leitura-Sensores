@@ -1,0 +1,97 @@
+body {
+	background-color: aliceblue;
+	font-family: 'Share Tech', sans-serif;
+	height: 100%;
+}
+
+.title {
+	text-align: center;
+	font-weight: bold;
+	font-size: 40px;
+	padding: 45px;
+}
+
+.gauge-title {
+	font-size: 26px;
+	padding: 5px;
+}
+
+.container {
+	display: flex;
+	min-height: 300px;
+}
+
+.item {
+	flex: 1;
+}
+
+.gauge-section {
+	text-align: center;
+}
+
+.rGauge {
+  width: 200px;
+  height: 145px;
+}
+
+.rGauge-base {
+  stroke: #edebeb;
+  fill: none;
+}
+
+.rGauge-progress {
+  fill: none;
+}
+
+.rGauge-val {
+  font-weight: 700;
+  font-size: 1.3em;
+}
+
+.rGauge-min-val, .rGauge-max-val {
+  fill: #b3b3b3;
+}
+
+.vGauge {
+  width: 145px;
+  height: 145px;
+}
+
+.vGauge-base {
+  fill: #edebeb;
+}
+
+.vGauge-progress {
+  
+}
+
+.vGauge-val {
+  font-weight: 700;
+  font-size: 1.3em;
+}
+
+.vGauge-min-val, .vGauge-max-val {
+  fill: #b3b3b3;
+}
+
+.dist-gauge {
+	align-items: center;
+	font-weight: bold;
+	font-size: 2.5em;
+	margin-top: 25px;
+}
+
+.title-footer {
+	font-size: 26px;
+	font-weight: bold;
+}
+
+footer {
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	background-color: #3F51B5;
+	color: white;
+	padding: 30px 0px;
+	text-align: center;
+}
