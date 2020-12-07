@@ -120,7 +120,7 @@ tarefas do FreeRTOS para conexão com WiFi, leituras dos sensores de temperatura
 * *task_lerDistancia*
 
 A função *event_handler* tem a finalidade de receber os eventos de conexão do WiFi, sendo utilizados Event Groups
-para indicar a situação da conexão para as demais tarefas e impedir que a criação do servidor TCP seja realizada
+para indicar a situação da conexão para as demais tarefas e impedir que a criação do servidor HTTP seja realizada
 sem estar conectado com o WiFi local.
 
 A task *task_sinalizarConexaoWifi* sinaliza através do *LED BUILDING* o status da conexão com o WiFi.
