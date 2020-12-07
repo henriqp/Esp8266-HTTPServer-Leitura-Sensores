@@ -132,7 +132,7 @@ Quando ocorrer falha na conexão do WiFi, a tarefa *task_reconectarWifi* é desb
 A tarefa de reconexão lê um botão que ao ser pressionado tenta reconectar novamento ao WiFi.
 
 Ao se conectar ao WiFi o servidor HTTP é criado, e então são registrados os manipuladores de URI passando a estrutura
-httpd_uri_t. Nesta estrutura são configurados o nome da uri, método HTTP e um ponteiro para a função handler.
+httpd_uri_t. Nesta estrutura são configurados o nome da uri, método HTTP e a função handler.
 
 As tasks *task_LerTemperaturaUmidade* e *task_lerDistancia* leem as informações dos sensores conectados.
 
