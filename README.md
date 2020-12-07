@@ -112,7 +112,7 @@ make flash monitor
 ### Aplicação
 
 A aplicação inicializa o armazenamento não volátil e as configurações do WiFi do ESP8266. Em seguida, são criadas as
-tarefas do FreeRTOS para conexão com WiFi, leituras dos sensores de temperatura e distância.
+tarefas do FreeRTOS para conexão com WiFi e leituras dos sensores de temperatura e distância.
 
 * *task_sinalizarConexaoWifi*
 * *task_reconectarWifi*
@@ -120,8 +120,7 @@ tarefas do FreeRTOS para conexão com WiFi, leituras dos sensores de temperatura
 * *task_lerDistancia*
 
 A função *event_handler* tem a finalidade de receber os eventos de conexão do WiFi, sendo utilizados Event Groups
-para indicar a situação da conexão para as demais tarefas e impedir que a criação do servidor HTTP seja realizada
-sem estar conectado com o WiFi local.
+para indicar a situação da conexão para as demais tarefas.
 
 A task *task_sinalizarConexaoWifi* sinaliza através do *LED BUILDING* o status da conexão com o WiFi.
 * 500ms - WiFi conectando
